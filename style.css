@@ -29,7 +29,6 @@ body{
 }
 #h1{
     text-align: center;
-    margin-top: 4rem;
     font-size: 200%;
     font-weight: bold;
     color: #000000;
@@ -76,7 +75,7 @@ body{
 }
 .form input.button{
   color: #fff;
-  background:#0775f3;
+  background:#2563eb;
   font-size: 80%;
   font-weight: 500;
   letter-spacing: 1px;
@@ -108,5 +107,7 @@ body{
 }
 
 
-/* media quary */
+/* choose file */
+
+
 
