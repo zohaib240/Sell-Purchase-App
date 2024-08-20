@@ -3,8 +3,8 @@ import { auth } from "./config.js";
 
 
 
-// const name =document.querySelector('#name')
-// const lastName =document.querySelector('#last_name')
+const name =document.querySelector('#name')
+const lastName =document.querySelector('#last_name')
 const email =document.querySelector('#Email')
 const password =document.querySelector('#Password')
 const form =document.querySelector('#form')
@@ -12,14 +12,14 @@ const form =document.querySelector('#form')
 
 form.addEventListener('submit',(event)=>{
     event.preventDefault()
+    console.log( email.value);
+    console.log( password.value);
     createUserWithEmailAndPassword(auth, email.value, password.value)
-   
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
     console.log(user)
-      email.value=''
-    password.value=''
+    window.location='login.html'
     
   })
   .catch((error) => {
@@ -28,7 +28,10 @@ form.addEventListener('submit',(event)=>{
     console.log(errorMessage);
     
   });
-
+  email.value=''
+  password.value=''
+  name.value=''
+  lastName.value=''
 })
 
 

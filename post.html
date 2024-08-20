@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy/ Sells Corner</title>
+  <!-- DaisyUI and Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <!-- Navbar Start -->
+  <div class="navbar bg-blue-700">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl text-base-100">Buy/ Sells Corner</a>
+    </div>
+    <div class="flex-none">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle"></div>
+        <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"></div>
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Profile Image" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Post Add Section -->
+   <div class="mt-6">
+  <h1 id="h1" class=" text-center text-3xl font-bold">Post Add</h1>
+  </div>
+  <div class="container mx-auto max-w-lg px-4 mt-20">
+    <div class="flex justify-center mb-6 ">
+      <label for="dropzone-file" class=" bg-blue-700  flex flex-col items-center justify-center  w-full h-64 border-2 border-gray-300  rounded-lg cursor-pointer  dark:bg-gray-700  dark:border-gray-600 ">
+        <div class=" flex flex-col items-center justify-center pt-5 pb-6">
+          <svg class="  w-56 h-20 mb-4 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+          </svg>
+          <p class="mb-2 text-white text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+        </div>
+        <input id="dropzone-file" type="file" class="hidden" />
+      </label>
+    </div>
+    <div class="form">
+      <form action="#" id="form">
+        <input type="text" id="title" placeholder="Product Title" class="input input-bordered w-full mb-4">
+        <input type="text" id="description" placeholder="Product description" class="input input-bordered w-full mb-4">
+        <input type="text" id="price" placeholder="Product Price" class="input input-bordered w-full mb-4">
+        <input type="text" id="name" placeholder="Enter Your Name" class="input input-bordered w-full mb-4">
+        <input type="password" id="number" placeholder="Enter Your Number" class="input input-bordered w-full mb-4">
+        <div class="text-center mt-3">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Post</button>
+
+        </div>  
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="post.js"></script>
+</body>
+</html>

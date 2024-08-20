@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <!-- Daisy ui  Cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Tailwind Cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- bootstrape  Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4f2610e6e7.js" crossorigin="anonymous"></script>
+    
+    <title>home</title>
+</head>
+<body>
+    <!------- navbar start------ -->
+
+  <div class="navbar  bg-blue-700">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl text-white text-base-100  ">Buy/ Sells Corner</a>
+    </div>
+     <div class="flex-none">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="badge badge-sm indicator-item">8</span>
+          </div>
+        </div>
+        <div 
+          tabindex="0"
+          class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+          <div class="card-body">
+            <span class="text-lg font-bold">8 Items</span>
+            <span class="text-info">Subtotal: $999</span>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-block">View cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+
+  <!------- navbar end------ -->
+
+  <div class="mt-6 ml-6 mr-6  bg-blue-700 ">
+
+    <!-- searc icon -->
+
+    <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control" placeholder="Enter...." aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </form>
+      </nav>
+
+      <h1 class="card-title text-white display-4 ml-6 ">Products</h1>
+<!-- bootstrape cards -->
+ <div class="d-flex gap-6 mt-6 justify-content-around flex-wrap">
+ 
+<div class="card" style="width: 25rem;">
+  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="d-flex justify-content-around ">
+    <h1 class="card-title">Rs.3666999</h1>
+    <button class="btn btn-secondary bg-red-700" style="width: 40%;" >Secondary</button>
+  </div>
+  </div>
+</div>
+
+<div class="card" style="width: 25rem;">
+  <img src="https://t3.ftcdn.net/jpg/01/21/81/86/360_F_121818673_6EID5iF76VCCc4aGOLJkd94Phnggre3o.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="d-flex justify-content-around ">
+    <h1 class="card-title">Rs.3666999</h1>
+    <button class="btn btn-secondary bg-red-700" style="width: 40%;" >Secondary</button>
+  </div>
+  </div>
+</div>
+
+
+
+</div>
+    
+  </div>
+
+
+</body>
+</html>
