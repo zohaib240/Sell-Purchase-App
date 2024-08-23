@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy/ Sells Corner</title>
+  <!-- DaisyUI and Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body> 
+  <!-- Navbar Start -->
+  <div class="navbar bg-blue-700">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl text-base-100">Buy/ Sells Corner</a>
+    </div>
+    <div class="flex-none">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle"></div>
+        <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"></div>
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Profile Image" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <div class="mt-6 ml-6 mr-6  bg-[#FFF6F6] ">
+
+    <!-- searc icon -->
+
+      <h1 id="h1" class="card-title text-black display-4 ml-6 mt-6 " id="product">Products</h1>
+
+<!-- daisy ui cards -->
+
+<div class="card card-side bg-base-100 shadow-xl mr-6 ml-6 mt-6">
+    <figure>
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+        alt="img" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title" id="price">5555555</h2>
+      <p id="description">Click the button to watch on Jetflix app.</p>
+
+      <div class="card-actions justify-start">
+        <button class="btn btn-primary">Watch</button>
+      </div>
+    </div>
+  </div>
+
+   <!-- add blog -->
+
+   <div class="card bg-[#FFF6F6]  border-2 text-black w-150 h-40 mt-6 mr-6 ml-6">
+    <div class="card-body">
+      <h1 class="card-title">Details</h1>
+      <div class="flex  gap-4 items-center ">
+      <h3 class="card-title">Brand</h3>
+      <h5 class="brand">iphone</h5>
+      <h3 class="card-title">Price</h3>
+      <h5 class="price">55555</h5>
+      <h3 class="card-title">Condition</h3>
+      <h5>good</h5>
+    </div>
+    </div>
+  </div>
+  
+    
+  
+
+ <!-- description -->
+
+  <div class="card bg-[#FFF6F6] border-2 text-black w-150 h-40 mt-6 mr-6 ml-6">
+    <div class="card-body">
+      <h1 class="card-title">Description</h1>
+      <div class="flex  gap-4 items-center ">
+      <h5 class="brand">iphonejkgkjgkgkgk</h5>
+    </div>
+    </div>
+  </div>
+  
+    
+  </div>
+</div>
+
+ 
+
+  <script type="module" src="post.js"></script>
+</body>
+</html>

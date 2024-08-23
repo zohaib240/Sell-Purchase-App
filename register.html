@@ -16,8 +16,9 @@
   <!-- ------- navbar start------ -- -->
 
   <div class="navbar  bg-blue-700">
-    <div class="flex-1">
+    <div class="flex-1 justify-between">
       <a class="btn btn-ghost text-xl text-base-100  ">Buy/ Sells Corner</a>
+      <a class="btn btn-ghost text-xl text-base-100  " href="login.html">Login</a>
     </div>
     <!-- <div class="flex-none">
       <div class="dropdown dropdown-end">
@@ -39,7 +40,7 @@
 
 
  <h1 id="h1" class="mt-[3rem]">Registeration</h1>
-  <div class="container w-96">
+  <div class="container w-96 bg-[#FFF6F6]">
     <input type="checkbox" id="check">
     <div class=" form ">
       <form action="#" id="form">
@@ -50,7 +51,7 @@
         <div class="mb-4">
           <input 
           type="file"
-          class="file-input file-input-bordered file-input-primary w-full max-w-xs" />
+          class="file-input file-input-bordered file-input-primary w-full max-w-xs" id="myfile" />
         </div>
         <div class="btn-center"><input type="submit" class="button" value="REGISTER"> </div>  
       </form>
@@ -58,6 +59,10 @@
          <label for="check"><a href="login.html">ALREADY A USER? PLEASE LOGIN</a></label>
       </div>
     </div>
+
+
+     <!-- SmartAlert LINK -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
     
     <script type="module" src="register.js"></script>
 </body>
