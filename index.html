@@ -18,11 +18,25 @@
     <!------- navbar start------ -->
 
   <div class="navbar  bg-blue-700">
-    <div class="flex-1 justify-between">
+    <div class="flex-1 justify-between align-center">
       <a class="btn btn-ghost text-xl text-white text-base-100  ">Buy/ Sells Corner</a>
-      <a class="btn btn-ghost text-xl text-base-100  text-white " href="login.html">Login</a>
-
-
+      <a class="btn btn-ghost text-xl text-base-100  text-white mt-2 " href="login.html">Login</a>
+      </div>
+       <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQArQMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBAf/xAAiEAEBAQADAQEBAQACAwAAAAAAARECEiExQVFhodEicYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A8fwuXFXwAWeFjScSs9BlYMxr1Lrt88BlVT416/8A0dfAZHI0nDT6gzzU5626+J6AjBnjTrcLr4DMeq6UdaCYo5xpyWAmxOYqi3wE4eFKqAqiT1WacmAQzdCpALD6rwWeAU44V+4uTVdZ/AZ8Yeavjxh9cBGFf/TSzwrAZ4WNOo6gy6n1aXiVgIzBn+KIEXiV4+K5bU8gZ9bP4B1v9MG0ipNEnhwCwrFyHgJis1XHj+r+/gInHDkXh8YCMGLw8BnZ/mjr58WAReKbGlhYCMFXYXKfAZ2cf56mxpZ6mwGdmJrSoBFicaWJwGnGVWHx+H5QHH1Welxn8aSAUmLhU/wDvpyJ2Z/rT59Ar4MVYX0E4MVgoJwsVgwEVFaYjkCKVVibATYnGl+Iv0EVNVUg2wpPVeiX3YCuHC/fWv8A5fmI42qnG/dA8GHnhWUD4ya0Z8Z/Wkz4ByGVMAX4ZAQsHwqBWs77V2Fm/wDYIsxNi7/v4i0E1FXamgipVySDomFJiZVAqffFyo4/5B7oNP8Ak4XH4uAJFT6k9wFiFoAxSK0BS/KW+lfgC2JtPCBFTbD5X3EZugVv8Tb4rMRzoIv3CO39T6Donhy6zlqtBoc+Ilo2g148lysYNgN9DOchoNNOc2fYaDXsV5M9T2BV5l2qbStoLnIuXJG1NoL5IlsEIDvJnfT1HK4CaWnStgNZT1lo30Gk5K31lo48vQb9hvjK8j40G0uH29ZXlpdvQbafZj2OUGlpS+J3wtgKvIb4i0ryBWib/Gfcdr/QXbhXki8i7AdTy9h9i5coDPtZ4NK30aC7S30tGgrRqCug10uyNwrdoNeypWF5YJzBv2Pu5+ypyBteZd
+              /GeloNZy8K8mei3wFdoV5oK0F9z1HFQC0vpjQSFDICKWgAqFb6ACeX0AAKcABWD8ABX4kABB+kAMqAAMgBl+gAqAAH/9k=" />
+          </div>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a href="post.html" >Add post</a></li>
+        </ul>
+      </div>
     </div>
      <!-- <div class="flex-none">
       <div class="dropdown dropdown-end">
@@ -55,28 +69,7 @@
           </div>
         </div>
       </div> -->
-      <!-- <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS Navbar component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-          </div>
-        </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li>
-            <a class="justify-between">
-              Profile
-              <span class="badge">New</span>
-            </a>
-          </li>
-          <li><a>Settings</a></li>
-          <li><a>Logout</a></li>
-        </ul>
-      </div>
-    </div> -->
+     
   </div> 
 
   <!------- navbar end------ -->
@@ -105,7 +98,9 @@
     <p class="card-text">This is the best shoes in the world and very expensive. checkpout my product 20% discount</p>
     <div class="d-flex justify-content-around ">
     <h1 class="card-title">Rs.3666999</h1>
-    <button class="btn btn-secondary bg-red-700" style="width: 40%;" >Secondary</button>
+    <button class="btn btn-secondary bg-red-700" style="width: 40%;" >
+      <a class="text-white" href="cart.html">Read more</a>
+    </button>
   </div>
   </div>
 </div>
@@ -117,7 +112,10 @@
     <p class="card-text">This is the best shoes in the world and very expensive</p>
     <div class="d-flex justify-content-around ">
     <h1 class="card-title">Rs.3666999</h1>
-    <button class="btn btn-secondary bg-red-700" style="width: 40%;" >Secondary</button>
+    <button class="btn btn-secondary bg-red-700" style="width: 40%;" >
+      <a class="text-white" href="cart.html">Read more</a>
+    
+    </button>
   </div>
   </div>
 </div>
